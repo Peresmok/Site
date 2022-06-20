@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleicon.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="footer.css">
+        <title>AnDesign</title>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="script.js"></script>
+        <script>
+            $(document).ready(function() { 
+              var button = $('#button-up');	
+              $(window).scroll (function () {
+                if ($(this).scrollTop () > 300) {
+                  button.fadeIn();
+                } else {
+                  button.fadeOut();
+                }
+            });	 
+            button.on('click', function(){
+            $('body, html').animate({
+            scrollTop: 0
+            }, 800);
+            return false;
+            });		 
+            });
+        </script>
+        <div id="button-up"><img src="arrow.png" alt="Стрелка" title="Вверх"></div>
+        <header class="wrapper">  
+            <div class="container"> 
+                <div class="grid-header">
+                    <div class="grid-item1">
+                        <a href="index.html">
+                            <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Логотип/logo.png" class="logo-img" alt="Логотип" title="Логотип">
+                        </a>
+                    </div>
+                    <div class="grid-item1-second">
+                        <p class="logo"><span class="logo">An</span>Design Web Studio</p>
+                    </div>
+                    <div class="grid-item3"><button class="header-button">Услуги</button></div>
+                    <div class="grid-item4"><button class="header-button">Цены</button></div>
+                    <div class="grid-item5"><button class="header-button">Портфолио</button></div>
+                    <div class="grid-item6"><button class="header-button">Контакты</button></div>
+                    <div class="grid-item8"><i class="fa-solid fa-phone">+373-69910767</i></div>
+                    <div class="grid-item9"><button class="header-button2">
+                        <a href="form.html">Заказать звонок</a>
+                    </button></div>
+                    <div class="b-popup" id="popup1">
+                        <div class="b-popup-content">
+                            Мы приняли Вашу заявку!
+                            <br>
+                        <a class="class1" href="javascript:PopUpHide()">Скрыть окно</a>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function(){  
+                            PopUpHide();
+                        });
+                        function PopUpShow(){
+                            $("#popup1").show();
+                        }
+                        function PopUpHide(){
+                            $("#popup1").hide();
+                        }
+                    </script>
+                    <div class="grid-item10">
+                        <input id="menu__toggle" type="checkbox">
+                        <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                        </label>
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="#">Услуги</a></li>
+                            <li><a class="menu__item" href="#">Цены</a></li>
+                            <li><a class="menu__item" href="#">Портфолио</a></li>
+                            <li><a class="menu__item" href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="grid-body-first">
+            <div class="block1-container">
+                <div class="item1-body-first">
+                    <h1>Разработка <span class="block1">Сайтов</span> для бизнеса</h1>
+                </div>
+                <div class="item2-body-first">
+                    <h6>
+                        Проектирование, разработка, тестирование и поддержка интернет-магазинов, веб-сервисов, приложений, продающих и корпоративных сайтов
+                    </h6>
+                </div>
+                <div class="item3-body-first">
+                    <button class="button-first-block">
+                        Рассчитать стоимость
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="grid-body-second">
+            <div class="block2-container">
+                <div class="item1-body-second">
+                    <div class="row-first-block-second-cont">
+                        <h2>Интернет магазины</h2>
+                    </div>
+                    <div class="row-second-block-second-cont">
+                        <h6 class="block2">
+                            Позволяют увеличить число покупателей, предложив им возможность дистанционного заказа и доставки товаров по месту назначения.
+                        </h6>
+                    </div>
+                    <div class="row-third-block-second-cont">
+                        <button class="block2">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+                <div class="item2-body-second">
+                    <div class="row-first-block-second-cont">
+                        <h2>Сайты компаний</h2>
+                    </div>
+                    <div class="row-second-block-second-cont">
+                        <h6 class="block2">
+                            Представляют компанию в сети интернет, формируют имидж среди потенциальных партнеров, знакомят с услугами и товарами компании.
+                        </h6>
+                    </div>
+                    <div class="row-third-block-second-cont">
+                        <button class="block2">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+                <div class="item3-body-second">
+                    <div class="row-first-block-second-cont">
+                        <h2>Landing Page</h2>
+                    </div>
+                    <div class="row-second-block-second-cont">
+                        <h6 class="block2">
+                            Разрабатывается для продажи какой-либо одной услуги или небольшого количества товаров для целевой аудитории.
+                        </h6>
+                    </div>
+                    <div class="row-third-block-second-cont">
+                        <button class="block2">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+                <div class="item4-body-second"></div>
+            </div>
+        </div>
+        <div class="grid-body-third">
+            <div class="block3-container">
+                <div class="grid-block3-line1-column1-6">
+                    <p>Грамотно разработанный <span class="block3">сайт</span></p>
+                </div>
+                <div class="grid-block3-line2-column1">
+                    Увеличит Продажи
+                </div>
+                <div class="grid-block3-line2-column2">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/graph.png" title="Граф" alt="Иконка_графа">
+                </div>
+                <div class="grid-block3-line2-column2-second">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/graph.png" title="Граф" width=250px alt="Иконка_графа">
+                </div>
+                <div class="grid-block3-line2-column3">
+                    Поднимет Имидж
+                </div>
+                <div class="grid-block3-line2-column4">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/star.png" title="Иконка звезды" alt="Иконка_звезды">
+                </div>
+                <div class="grid-block3-line2-column4-second">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/star.png" title="Иконка звезды" width=250px alt="Иконка_звезды">
+                </div>
+                <div class="grid-block3-line2-column5">
+                    Повысит Лояльность
+                </div>
+                <div class="grid-block3-line2-column6-second">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/mobile.png" title="Телефон" width=250px alt="Иконка_телефона">
+                </div>
+                <div class="grid-block3-line2-column6">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/mobile.png" title="Телефон" alt="Иконка_телефона">
+                </div>
+                <div class="grid-block3-line3-column1-2">
+                    В интернет-магазине количество потенциальных клиентов намного больше, чем в оффлайне
+                </div>
+                <div class="grid-block3-line3-column3-4">
+                    Сайт формирует лицо компании, узнаваемость бренда, содает положительное восприятие продуктов компании у потребителя
+                </div>
+                <div class="grid-block3-line3-column5-6">
+                    Сайт упрощает коммуникацию с клиентами. Позволяет понять, что им интересно и важно
+                </div>
+                <div class="grid-block3-line4">
+                    Мы гарантируем
+                </div>
+                <div class="grid-block3-line5-column1">
+                   01
+                </div>
+                <div class="grid-block3-line5-column2-3">
+                    Фиксированную цену
+                </div>
+                <div class="grid-block3-line5-column4-7">
+                    Цена за проект не изменится в процессе разработки.
+                </div>
+                <div class="grid-block3-line6-column1">
+                    02
+                </div>
+                <div class="grid-block3-line6-column2-3">
+                    Соблюдение сроков
+                </div>
+                <div class="grid-block3-line6-column4-7">
+                    Проект всегда будет реализован в оговоренные сроки.
+                </div>
+                <div class="grid-block3-line7-column1">
+                    03
+                </div>
+                <div class="grid-block3-line7-column2-3">
+                    Высокое качество
+                </div>
+                <div class="grid-block3-line7-column4-7">
+                    Мы гарантируем, что Ваш сайт будет уникальным и будет соответствовать всем требованиям качественной разработки.
+                </div>
+                <button class="block3-button">
+                    Узнать стоимость разработки сайта
+                </button>
+            </div>
+        </div>
+        <div class="grid-body-fourth">
+            <div class="block4-container">
+                <div class="grid-block4-line2-4-column1-2">
+                    <div class="grid-block4-line2-column1-2">
+                        <p>
+                            Узнайте предварительную <span class="block4">цену</span> на разработку сайта
+                        </p>
+                    </div>
+                    <div class="grid-block4-line3-column1-2">
+                        <p>Ответьте на 3 коротких вопроса за <span class="block4-bold">20 секунд</span> и получите предварительный расчет стоимости разработки сайта. А также <span class="block4-bold">скидку 10%</span> на будущую разработку.</p>
+                    </div>
+                    <button class="block4-button">
+                        Расчёт стоимости
+                    </button>
+                </div>
+                <div class="grid-block4-image">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/photoesgroup.png" title="Фото" alt="Фото" class="responsive hover-effect2">
+                </div>
+                <div class="grid-block4-image2">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Узнайте предварительную цену/group.png" title="Фото" alt="Фото" class="responsive">
+                </div>
+            </div>
+        </div>
+        <div class="grid-body-fifth">
+            <div class="block5-container">
+                <div class="grid-block5-line1-column1">
+                    <p>
+                        Портфолио<span class="block5"> проектов</span>
+                    </p>
+                </div>
+                <div class="grid-block5-line2-column1">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/TIG/latest.png" title="Логотип" alt="Фото1" class="responsive">
+                </div>
+                <div class="grid-block5-line2-column2">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Репетитор математики/photo.png" title="Фото" alt="Фото2" class="responsive hover3">
+                </div>
+                <div class="grid-block5-line3-column1">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Сервис заказа и продажи билетов на автобус/photo.png" title="Фото" alt="Фото3" class="responsive">
+                </div>
+                <div class="grid-block5-line3-column2">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ювелирный бижутерий/photo.png" title="Фото" alt="Фото4" class="responsive">
+                </div>
+                <div class="grid-block5-line4-column2">
+                    <button class="block5-button">
+                        Посмотреть ещё
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="grid-body-sixth">
+            <div class="block6-container">
+                <div class="grid-block6-line1">
+                    Ход работ по проекту
+                </div>
+                <div class="block6-image1">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/text1.png" title="Текст 1" alt="Текст1">
+                </div>
+                <div class="grid-block6-line2-column1"></div>
+                <div class="block6-image2">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/text2.png" title="Текст 2" alt="Текст2">
+                </div>
+                <div class="grid-block6-line2-column2"></div>
+                <div class="block6-image3">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/text3.png" title="Текст 3" alt="Текст3">
+                </div>
+                <div class="grid-block6-line3-column1"></div>
+                <div class="block6-image4">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/text4.png" title="Текст 4" alt="Текст4">
+                </div>
+                <div class="grid-block6-line3-column2"></div>
+                <div class="block6-image5">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/text5.png" title="Текст 5" alt="Текст5">
+                </div>
+                <div class="grid-block6-line4-column1"></div>
+                <div class="block6-image6">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/text6.png" title="Текст 6" alt="Текст6">
+                </div>
+                <div class="grid-block6-line4-column2"></div>
+                <div class="block6-image7">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/text7.png" title="Текст 7" alt="Текст7">
+                </div>
+                <div class="grid-block6-line5-column1"></div>
+                <div class="block6-image8">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/text8.png" title="Текст 8" alt="Текст8">
+                </div>
+                <div class="grid-block6-line5-column2"></div>
+                <div class="grid-block6-lineLast-column1-2">
+                    <button class="block6-button">
+                        Заказать проект
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Слайдер -->
+        <div class="slideshow-container">
+            <p class="slider"><span class="slider">Ход</span> работ по проекту</p>
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/last1.png" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/last2.png" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/last3.png" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/last4.png" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/last5.png" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/last6.png" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/last7.png" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Ход работ по проекту/last8.png" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div class="Number"></div>
+        <div class="dots">
+            <span class="dot dot-active" onclick="currentSlide(1)"></span>
+            <span class="dot dot-pan" onclick="currentSlide(2)"></span>
+            <span class="dot dot-pan-two" onclick="currentSlide(3)"></span>
+            <span class="dot dot-pan-3" onclick="currentSlide(4)"></span>
+            <span class="dot dot-pan-4" onclick="currentSlide(5)"></span>
+            <span class="dot dot-pan-5" onclick="currentSlide(6)"></span>
+            <span class="dot dot-pan-6" onclick="currentSlide(7)"></span>
+            <span class="dot dot-pan-7" onclick="currentSlide(8)"></span>
+        </div>
+        <div class="grid-body-seventh">
+            <div class="block7-container">
+                <div class="grid-body-block7-line1">
+                    <p>
+                        Давайте<span class="block7"> обсудим</span> Ваш проект
+                    </p>
+                </div>
+                <div class="grid-body-block7-line2">
+                    Объясните нам свой проект, и мы свяжемся с Вами сразу же как сделаем расчет.
+                </div>
+                <div class="grid-body-block7-line3-column1">
+                    <input type="text1" placeholder="Имя">
+                </div>
+                <div class="grid-body-block7-line4-column1">
+                    <input type="tel" placeholder="Телефон*">
+                </div>
+                <div class="grid-body-block7-line5-column1">
+                    <input type="text1" placeholder="E-Mail">
+                </div>
+                <div class="grid-body-block7-line3-4-column2">
+                    <textarea placeholder="Опишите кратко, что Вам нужно"></textarea>
+                </div>
+                <div class="grid-body-line5-column2">
+                    <button class="block7-button">
+                        Отправить сообщение
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="grid-body-eight">
+            <div class="block8-container">
+                <div class="grid-body-block8-line1">
+                    Дополнительные услуги
+                </div>
+                <div class="grid-body-block8-line1-second">
+                    <p>Дополнительные <span class="block8">услуги</span></p>
+                </div>
+                <div class="grid-body-block8-line2-column1"></div>
+                <div class="grid-body-block8-line2-column1-second">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Дополнительные услуги/photo1.png" title="Доп. услуги" width=800px>
+                </div>            
+                <div class="grid-body-block8-line2-column2">
+                    <div class="block8-right-line1">
+                        Маркетинг и продвижение
+                    </div>
+                    <div class="block8-right-line2">
+                        <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Список/list1.png" title="Список" alt="Список1">
+                    </div>
+                    <div class="block8-right-line3">
+                        <button class="block8-button1">Заказать продвижение</button>
+                    </div>
+                    <div class="block8-right-line2-second">
+                        <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Список/list1.png" title="Список" width=800px alt="Список1">
+                    </div>
+                </div>
+                <div class="grid-body-block8-line3-column1">
+                    <div class="block8-left-line1">
+                        Дизайн
+                    </div>
+                    <div class="block8-left-line2">
+                        <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Список/list2.png" title="Список" alt="Список2">
+                    </div>
+                    <div class="block8-left-line2-second">
+                        <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Список/list2.png" title="Список" width=700px alt="Список2">
+                    </div>
+                    <div class="block8-left-line3">
+                        <button class="block8-button2">Заказать разработку</button>
+                    </div>
+                </div>
+                <div class="grid-body-block8-line3-column2"></div>
+                <div class="grid-body-block8-line3-column2-second">
+                    <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Дополнительные услуги/photo2.png" title="Доп. услуги" width=800px>
+                </div>                
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/9f5e74eca8.js" crossorigin="anonymous"></script>
+        <footer class="footer-wrapper">  
+            <div class="footer-container"> 
+                <div class="grid-footer">
+                    <div class="footer-item1">
+                        <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/Логотип/logo.png" title="Логотип" alt="Логотип">
+                    </div>
+                    <div class="footer-item2">
+                        <button class="footer-menu-button">Услуги</button>
+                    </div>
+                    <div class="footer-item3">
+                        <button class="footer-menu-button">Цены</button>
+                    </div>
+                    <div class="footer-item4">
+                        <button class="footer-menu-button">Портфолио</button>
+                    </div>
+                    <div class="footer-item5">
+                        <button class="footer-menu-button">Контакты</button>
+                    </div>
+                    <div class="footer-item6">
+                        <p class="footer">
+                            <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/footer/tg.png" title="Телеграмм" alt="Телеграмм">
+                            <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/footer/facebook.png" title="Фейсбук" alt="Фейсбук">
+                            <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/footer/inst.png" title="Инстаграмм" alt="Инстаграмм">
+                        </p>
+                    </div>
+                    <div class="footer-item6-second">
+                        <p class="footer">
+                            <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/footer/tg.png" title="Телеграмм" width=70px alt="Телеграмм">
+                            <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/footer/facebook.png" title="Фейсбук" width=34px alt="Фейсбук">
+                            <img src="C:/3 курс/ПССIП/Практика/Сайт/images/png/footer/inst.png" title="Инстаграмм" width=70px alt="Инстаграмм">
+                        </p>
+                    </div>
+                    <div class="footer-item7">
+                        ©2020 AnDesign Создание сайтов для бизнеса
+                    </div>
+                    <div class="footer-item7-second">
+                        ©2020 AnDesign<span>Создание сайтов для бизнеса</span>
+                    </div>
+                    <div class="adapt-item1">
+                        <p>AnDesign<br><span class="footer">Web Studio</span></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

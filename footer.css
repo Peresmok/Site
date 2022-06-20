@@ -1,0 +1,375 @@
+.footer-wrapper {
+    width: 100%;
+    height: 225px;
+    background-color: #010101;
+}
+
+.footer-container {
+    max-width: 1182px;
+    height: inherit;
+    margin: 0px auto;
+    background-color: #010101;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+.grid-footer {
+    display: grid;
+    height: inherit;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 24% 13% 13% 13% 13% 24%;
+}
+
+.footer-item1 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    font-family: "Tenor Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 66px;
+}
+
+.footer-item2 {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    font-family: "Tenor Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 66px;
+}
+
+.footer-item3 {
+    display: grid;
+    grid-column: 3;
+    grid-row: 1;
+    font-family: "Tenor Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 66px;
+}
+
+.footer-item4 {
+    display: grid;
+    grid-column: 4;
+    grid-row: 1;
+    font-family: "Tenor Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 66px;
+}
+
+.footer-item5 {
+    display: grid;
+    grid-column: 5;
+    grid-row: 1;
+    font-family: "Tenor Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 66px;
+}
+
+.footer-item6 {
+    display: grid;
+    grid-column: 6;
+    grid-row: 1;
+    font-family: "Tenor Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 66px;
+    justify-content: end;
+}
+
+.footer-item6-second {
+    display: none;
+    grid-column: 1;
+    grid-row: 2;
+    font-family: "Tenor Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-item7 {
+    display: grid;
+    grid-column: 2/6;
+    grid-row: 2;
+    font-family: "Tenor Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.footer-item7-second {
+    display: none;
+    grid-column: 2/6;
+    grid-row: 2;
+    font-family: "Tenor Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+button.footer-menu-button {
+    background-color: #010101;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+p.footer {
+    margin: 0;
+    word-spacing: 40px;
+}
+
+.footer-menu-button:hover {
+    color: red;
+}
+
+.adapt-item1 {
+    display: none;
+}
+
+@media (max-width: 420.98px) {
+    .footer-wrapper {
+        min-width: 100%;
+        min-width: 1181px;
+        min-height: 500px;
+        background-color: #010101;
+    }
+    
+    .footer-container {
+        max-width: 90%;
+        height: 500px;
+        margin: 0px auto;
+        background-color: #010101;
+    }
+
+    .grid-footer {
+        display: grid;
+        height: 500px;
+        grid-template-rows: 33.33% 33.33% 33.33%;
+        grid-template-columns: 100%;
+    }
+
+    .footer-item1 {
+        display: none;
+        grid-column: 1;
+        grid-row: 1;
+        font-family: "Tenor Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 66px;
+    }
+    
+    .footer-item2 {
+        display: none;
+        grid-column: 2;
+        grid-row: 1;
+        font-family: "Tenor Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 66px;
+    }
+    
+    .footer-item3 {
+        display: none;
+        grid-column: 3;
+        grid-row: 1;
+        font-family: "Tenor Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 66px;
+    }
+    
+    .footer-item4 {
+        display: none;
+        grid-column: 4;
+        grid-row: 1;
+        font-family: "Tenor Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 66px;
+    }
+    
+    .footer-item5 {
+        display: none;
+        grid-column: 5;
+        grid-row: 1;
+        font-family: "Tenor Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 66px;
+    }
+    
+    .footer-item6 {
+        display: none;
+        grid-column: 1;
+        grid-row: 2;
+        font-family: "Tenor Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-right: 43%;
+    }
+
+    .adapt-item1 {
+        display: grid;
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1;
+        font-family: "Tenor Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 100%;
+        color: #FFFFFF;
+        margin-right: 43%;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    br {
+        height: 0;
+    }
+
+    span.footer {
+        font-family: "Tenor Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0.5em;
+        color: #FFFFFF;
+    }
+
+    .footer-item6-second {
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        font-family: "Tenor Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+    .footer-item7 {
+        display: none;
+        grid-column: 2/6;
+        grid-row: 2;
+        font-family: "Tenor Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    .footer-item7-second {
+        display: grid;
+        grid-column: 1;
+        grid-row: 3;
+        font-family: "Tenor Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 100%;
+        color: #FFFFFF;
+        margin-top: 0;
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+    button.footer-menu-button {
+        background-color: #010101;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    p.footer {
+        margin: 0;
+        word-spacing: 300px;
+    }
+}

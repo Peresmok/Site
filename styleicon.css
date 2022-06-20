@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('fonts/icons.eot?n2v1si');
+  src:  url('fonts/icons.eot?n2v1si#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?n2v1si') format('truetype'),
+    url('fonts/icons.woff?n2v1si') format('woff'),
+    url('fonts/icons.svg?n2v1si#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"], [class*=" _icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-icons8--50-2:before {
+  content: "\e916";
+}
+._icon-logo-ws:before {
+  content: "\e913";
+  color: #fff;
+}
+._icon-logo_ad .path1:before {
+  content: "\e914";
+  color: rgb(255, 0, 0);
+}
+._icon-logo_ad .path2:before {
+  content: "\e915";
+  margin-left: -4.5595703125em;
+  color: rgb(255, 255, 255);
+}
+._icon-Ellipse-inside:before {
+  content: "\e900";
+  color: #fdfdfd;
+}
+._icon-Ellipse-outside:before {
+  content: "\e901";
+}
+._icon-Cursor:before {
+  content: "\e902";
+}
+._icon-Letter-up:before {
+  content: "\e903";
+}
+._icon-Letter-down:before {
+  content: "\e904";
+}
+._icon-Mobile:before {
+  content: "\e905";
+}
+._icon-Message-right:before {
+  content: "\e906";
+}
+._icon-Message-left:before {
+  content: "\e907";
+}
+._icon-Star-center:before {
+  content: "\e908";
+}
+._icon-Star-left:before {
+  content: "\e909";
+}
+._icon-Star-right-up:before {
+  content: "\e90a";
+}
+._icon-Star-right-down:before {
+  content: "\e90b";
+}
+._icon-Star-left-up:before {
+  content: "\e90c";
+}
+._icon-Graph-line:before {
+  content: "\e90d";
+}
+._icon-Graph-vector-up:before {
+  content: "\e90e";
+}
+._icon-Graph-vector-down:before {
+  content: "\e90f";
+}
+._icon-TIG:before {
+  content: "\e910";
+}
+._icon-TIG-left:before {
+  content: "\e911";
+}
+._icon-TIG-right:before {
+  content: "\e912";
+}

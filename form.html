@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Пользовательская форма</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="script.js"></script>
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <label>Имя<input type="text" required></label>
+            <label>Телефон<input type="email" required></label>
+        </fieldset>
+        <button class="form">
+            <a href="javascript:PopUpShow()">Заказать звонок</a>
+        </button>
+        <br>
+        <button class="form">
+            <a href="index.html">На главную</a>
+        </button>
+        <div class="b-popup" id="popup1">
+            <div class="b-popup-content">
+                Мы приняли Вашу заявку!
+                <br>
+            <a class="class1" href="javascript:PopUpHide()">Скрыть окно</a>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){  
+                PopUpHide();
+            });
+            function PopUpShow(){
+                $("#popup1").show();
+            }
+            function PopUpHide(){
+                $("#popup1").hide();
+            }
+        </script>
+    </body>
+</html>
